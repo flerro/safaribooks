@@ -37,6 +37,11 @@ The ID is the digits that you find in the URL of the book description page:
 `https://www.safaribooksonline.com/library/view/book-name/XXXXXXXXXXXXX/`  
 Like: `https://www.safaribooksonline.com/library/view/test-driven-development-with/9781491958698/`  
   
+# Other Dependencies
 
+Bin scripts depennds on the following tools:
+
+- [`rclone`](https://rclone.org/) to sync data to GDrive
+- [`fd`](https://github.com/sharkdp/fd) to find file faster  
   
 

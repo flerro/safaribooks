@@ -16,3 +16,9 @@ if [ "n$1" == "n" ]; then
 fi
 
 python safaribooks.py --cred "$SAFARI_USER:$SAFARI_PASSWORD" $1
+
+echo "Cleaning up..."
+
+fd Books/OEBPS -x rm -r
+fd Books/META-INF -x rm -r
+fd Books/mime -x rm
