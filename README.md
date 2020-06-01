@@ -24,8 +24,21 @@ Add credentials to `.env`
 
   SAFARI_USER=myuser
   SAFARI_PASSW=mypass
-  
+    
 ## Usage:
+
+### Using Docker
+
+Build:
+
+  source .env && docker build --build-arg "USER=$SAFARI_USER" --build-arg "PASSW=$SAFARI_PASSW"  -t safaribooks .
+
+Download a book:  
+
+  ???
+
+
+### Without docker 
 
 Run via the shell script:
 
