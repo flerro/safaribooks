@@ -18,7 +18,3 @@ fi
 
 python safaribooks.py --cred "$SAFARI_USER:$SAFARI_PASSWORD" $1
 
-for I in OEBPS META-INF mime; do
- echo "Removing $I..."	
- find Books -name 'META-INF' -type d -exec rm -rf {} \;
-done
