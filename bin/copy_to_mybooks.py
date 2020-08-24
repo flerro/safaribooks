@@ -6,7 +6,7 @@ from shutil import copyfile
 
 def make_dest(source):
     d = source.split("/")[3]
-    d = d.replace("(", "").replace(")", "")
+    d = d.replace("(", "").replace(")", "").replace(":", "")
     return d.replace(" ", "_") + ".epub"
 
 if __name__ == "__main__":

@@ -1,6 +1,8 @@
 #!/bin/bash
+#
+# Sync ~/Books directory to GDrive
+#
 
-cd `dirname $0`
-cd ../Books
+SOURCE="$HOME/Books"
 
-rclone copy Books "gdrive:O'Reilly Books" -P 
+rclone copy "$SOURCE" "gdrive:O'Reilly Books" -P 
